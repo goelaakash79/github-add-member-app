@@ -45,9 +45,9 @@ module.exports.registerstudyjam = (req, res) => {
             }
             CloudJam.create(req.body, (err, done) => {
                 if (err) {
-                    return res.render('workshop', {message: 'try again'});
+                    return res.render('studyjam', {message: 'try again'});
                 }
-                return res.render('workshop', {message: 'success'});
+                return res.render('studyjam', {message: 'success'});
             });
         });
     }
